@@ -1,9 +1,3 @@
-local CONFIG_MESSAGE1 = ""
-local CONFIG_MESSAGE2 = ""
-local CONFIG_MESSAGE3 = ""
-local CONFIG_MESSAGE4 = ""
-local CONFIG_MESSAGE5 = ""
-
 repeat task.wait(1) until game:IsLoaded()
 
 local queue = ""
