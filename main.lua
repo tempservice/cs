@@ -101,7 +101,7 @@ local ServerHop = function()
 		end) then ServerHopping = true return end
 end
 
-for i = 1, 5 do
+for i = 1, 2 do
 	SpamChat()
 end
 
