@@ -6,7 +6,7 @@ local ServerHopping = false
 local SpamChat = function()
 	local Messages = {
 		",gg/jailbreakshop ON TOP!!!",
-		",gg/jailbreakshop JOIN UP!!!",
+		",gg/jailbreakshop W!!!",
 		",gg/jailbreakshop CHEAP ITEMS!!!"
 	}
 
