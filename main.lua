@@ -1,13 +1,19 @@
 repeat task.wait(1) until game:IsLoaded()
 
+if getgenv().Loaded ~= nil then return end
+
+getgenv().Loaded = true
+
 local queue = ""
 local ServerHopping = false
 
 local SpamChat = function()
 	local Messages = {
-		",gg/jailbreakshop 0N T0P!!!",
-		",gg/jailbreakshop W",
-		",gg/jailbreakshop CH$AP ITEMS!!!"
+		",gg/7BUmSSrWgb CH$AP CARS!!",
+		",gg/7BUmSSrWgb TORP GIVEAWAYS!!",
+		",gg/7BUmSSrWgb CH$AP ITEMS!!!",
+		",gg/7BUmSSrWgb CH$AP HYPERS!!!",
+		",gg/7BUmSSrWgb CH$AP AUTOFARMS!!!",
 	}
 
 	for i = 1, #Messages do
@@ -101,7 +107,7 @@ local ServerHop = function()
 		end) then ServerHopping = true return end
 end
 
-for i = 1, 2 do
+for i = 0, 1 do
 	SpamChat()
 end
 
@@ -111,6 +117,5 @@ if not ServerHopping then
 	repeat 
 		task.wait() 
 		ServerHop() 
-		wait(15.5)
 	until ServerHopping and game:GetService("Players").LocalPlayer == nil
 end
